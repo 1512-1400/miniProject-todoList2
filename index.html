@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo list</title>
+    <link rel="stylesheet" href="./tailwind.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="containerr w-full h-screen flex flex-col justify-center items-center">
+        <div class="modalBg w-full h-screen absolute flex justify-center items-center">
+            <div class="modal w-2/5 h-2/5 rounded-3xl p-2 flex flex-col justify-around items-center bg-gray-900 text-xl text-white font-bold">
+                press enter to add a new todo every time...
+                <div class="ok w-11/12 h-10 flex justify-center items-center bg-blue-600 rounded-lg cursor-pointer">Ok</div>
+            </div>
+        </div>
+        <div class="todosContainer w-8/12 h-4/5 flex rounded-2xl overflow-hidden">
+            <div id="col1" class="overflow-hidden notStarted col w-1/4 h-full flex flex-col justify-start items-center bg-gray-200">
+                <div class="title w-full bg-blue-400 flex justify-center items-center text-xl font-bold mb-1">
+                    not started
+                </div>
+            </div>
+            <div id="col2" class="overflow-hidden started col w-1/4 h-full flex flex-col justify-start items-center bg-gray-100">
+                <div class="title w-full bg-blue-300 flex justify-center items-center text-xl font-bold mb-1">
+                    started
+                </div>
+            </div>
+            <div id="col3" class="overflow-hidden inProggrese col w-1/4 h-full flex flex-col justify-start items-center bg-gray-200">
+                <div class="title w-full bg-blue-400 flex justify-center items-center text-xl font-bold mb-1">
+                    in proggrese
+                </div>
+            </div>
+            <div id="col4" class="overflow-hidden ended col w-1/4 h-full flex flex-col justify-start items-center bg-gray-100">
+                <div class="title w-full bg-blue-300 flex justify-center items-center text-xl font-bold mb-1">
+                    ended
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

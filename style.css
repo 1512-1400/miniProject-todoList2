@@ -1,0 +1,14 @@
+.containerr{
+    background-image: url(./pexels-harrison-candlin-2441454.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.modalBg , .todoInputBg{
+    backdrop-filter: blur(10px);
+}
+.todoInputBg{
+    display: none;
+}
+.title{
+    height: 80px !important;
+}
